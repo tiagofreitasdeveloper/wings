@@ -1,0 +1,9 @@
+{
+   "name": "wings-angular",
+   "version": "0.0.1",
+   "description": "Wings",
+   
+   "scripts": {
+          "start": "http-server"
+    }
+}

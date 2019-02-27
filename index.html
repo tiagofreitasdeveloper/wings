@@ -23,103 +23,15 @@
 
 </head>
 <body >
- 
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class = 'navbar-nav mr-auto'>
             <li class="nav-item"><a class="nav-link" ui-sref="picked">Picked and Packed</a></li>
             <li class="nav-item"><a class="nav-link" ui-sref="dispached">Dispatched</a></li>
         </ul>
     </nav>
-    <div    >
-        <div class="row content cmargin ">
-            <div id="content" class="col-sm-9 content-body">
-                        <h2>Picked and Packed Confirmation</h2>
-                        <p translate>Use this page to Picked And Packed Confirmation </p>
-                        <div class="row">
-                            <br />
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="form-group">
-                                        <label for="pickingLabelCode" translate>Picking Label Code</label>
-                                        <input class="form-control input-sm" type="text" name="pickingLabelCode" ng-model="" maxlength="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="form-group">
-                                        <label for="partCode" translate>Part Code</label>
-                                        <input class="form-control input-sm" type="text" name="partCode" ng-model="" maxlength="" />
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="row">
-                            <br />
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="form-group">
-                                        <label for="pickedQuantity" translate>Picked Quantity</label>
-                                        <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="form-group">
-                                        <label for="caseLabelCode" translate>Case Label Code</label>
-                                        <input class="form-control input-sm" type="text" name="caseLabelCode" ng-model="" maxlength="" />
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-12 col-xs-12">
-                            <div class="form-group">
-                                <br/>
-                                <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-primary-default" uib-tooltip="">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Save</span>
-                                </button>
-                                <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-secondary" uib-tooltip="">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Clear</span>
-                                </button>
-                                <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-primary-default" uib-tooltip="">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Print Case</span>
-                                </button>
-                                <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-danger" uib-tooltip="">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Delete Case</span>
-                                </button>
-                            </div>
-                        </div> 
-                        <h3 translate>Picked List</h3>
 
-                    <div class="row">
-                        <div wc-responsive-table data="controller.list" page="controller.currentPage" count="controller.listCount" data-table-name="list" row-key="countryUidK" pagination-enabled checkallnone-enabled responsive-view="list" 
-                            id="list-table" class="col-xs-12 wc-table" ng-model="controller.itensToDelete">
-                            <table class="table table-striped table-bordered">
-                                <thead>
-                                <tr>
-                                    
-                                    <th wc-column-sort="bkCountryIsoC" wc-column-sort-default="asc" class="col-hide">Picking List</th>
-                                    <th wc-column-sort="countryN" wc-column-sort-default="asc" class="hidden-xs">Picking Label</th>
-                                    <th wc-column-sort="currencyIsoC">Case Label</th>
-                                    <th wc-column-sort="currencyMaskX" class="hidden-xs">Part Code</th>
-                                    <th wc-column-sort="priceCurrencyDecimalQ" class="hidden-xs">Part Description</th>
-                                    <th wc-column-sort="languageC" class="hidden-xs">Picked Qty</th>
-                                    <th wc-column-sort="countryIsoR" class="hidden-xs">Dealer</th>
-                                    <th wc-column-sort="countryIsoR" class="hidden-xs">Zone</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-center col-xs-1 col-hide"><span></span></td>
-                                    <td class="text-center col-xs-1"><span></span></td>
-                                    <td class="text-center col-xs-1 col-hide "><span></span></td>
-                                    <td class="text-center col-xs-1 hidden-xs"><span></span></td>
-                                    <td class="text-center col-xs-1 hidden-xs"><span></span></td>
-                                    <td class="text-center col-xs-2 hidden-xs"><span></span></td>
-                                    <td class="text-center col-xs-1 hidden-xs"><span></span></td>
-                                    <td class="text-center col-xs-1 hidden-xs"><span></span></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>               
-
+    <ui-view></ui-view>
 
 </body>
 </html>

@@ -5,7 +5,8 @@ app.config(function ( $stateProvider ) {
     $stateProvider
     .state('picked', {
         url: '/picked',
-        template: "picked.html"
+        templateUrl: 'picked.html'        
+        
     })
 
      $stateProvider
