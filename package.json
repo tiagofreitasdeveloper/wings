@@ -1,9 +1,26 @@
 {
-   "name": "wings-angular",
-   "version": "0.0.1",
-   "description": "Wings",
-   
-   "scripts": {
-          "start": "http-server"
-    }
+  "name": "wings-angular",
+  "version": "0.0.1",
+  "description": "Wings",
+  "scripts": {
+    "start": "http-server"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=6.0.0"
+  },
+  "main": "picked.controller.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagofreitasdeveloper/wings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagofreitasdeveloper/wings/issues"
+  },
+  "homepage": "https://github.com/tiagofreitasdeveloper/wings#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
 }

@@ -770,10 +770,11 @@ ul.nav li a, ul.nav li {
 }
 
 
-.wc-table thead>tr>th {
+table thead>tr>th {
 	background-color: #0e9aef !important;
 	opacity: 0.7;
 	color: #fff;
+	border-width: 1px 1px 0 0;
 /* 	box-shadow: 0px 1px 5px #888888; */
 }
 .wc-table thead {

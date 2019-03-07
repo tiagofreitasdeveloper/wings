@@ -1,4 +1,6 @@
+
  <div id="content" class="col-sm-9 content-body">
+
     <h2>Picked and Packed Confirmation</h2>
     <p>Use this page to Picked And Packed Confirmation</p>
 
@@ -7,13 +9,13 @@
                 <div class="col-md-4 col-xs-6">
                     <div class="form-group">
                         <label for="pickingLabelCode" translate>Picking Label Code</label>
-                        <input class="form-control input-sm" type="text" name="pickingLabelCode" ng-model="" maxlength="" />
+                        <input class="form-control input-sm" type="text" name="pickingLabelCode" ng-model="a" maxlength="" />
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-6">
                     <div class="form-group">
                         <label for="partCode" translate>Part Code</label>
-                        <input class="form-control input-sm" type="text" name="partCode" ng-model="" maxlength="" />
+                        <input class="form-control input-sm" type="text" name="partCode" ng-model="a" maxlength="" />
                     </div>
                 </div>
         </div>
@@ -22,13 +24,13 @@
                 <div class="col-md-4 col-xs-6">
                     <div class="form-group">
                         <label for="pickedQuantity" translate>Picked Quantity</label>
-                        <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                        <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="a" maxlength="" />
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-6">
                     <div class="form-group">
                         <label for="caseLabelCode" translate>Case Label Code</label>
-                        <input class="form-control input-sm" type="text" name="caseLabelCode" ng-model="" maxlength="" />
+                        <input class="form-control input-sm" type="text" name="caseLabelCode" ng-model="a" maxlength="" />
                     </div>
                 </div>
         </div>
@@ -51,11 +53,8 @@
         </div>
 
         <h3 translate>Picked List</h3>
-
-         <div class="row">
-            <div wc-responsive-table data="controller.list" page="1" count="controller.listCount" data-table-name="list" row-key="countryUidK" pagination-enabled checkallnone-enabled responsive-view="list" 
-                id="list-table" class="col-xs-12 wc-table" ng-model="controller.itensToDelete">
-                <table class="table table-striped table-bordered">
+        <div class="row">
+         <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
                         
@@ -70,8 +69,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td class="text-center col-xs-1 col-hide"><span></span></td>
+                    <tr ng-repeat="picked in listPicked">
+                        <td class="text-center col-xs-1 col-hide"><span>{{picked.partCode}}</span></td>
                         <td class="text-center col-xs-1"><span></span></td>
                         <td class="text-center col-xs-1 col-hide "><span></span></td>
                         <td class="text-center col-xs-1 hidden-xs"><span></span></td>
@@ -81,8 +80,8 @@
                         <td class="text-center col-xs-1 hidden-xs"><span></span></td>
                     </tr>
                     </tbody>
-                </table>
-            </div>
-        </div> 
+                </table>   
+        </div>
+
 
  </div>    
