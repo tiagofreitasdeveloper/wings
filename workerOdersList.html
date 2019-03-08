@@ -1,0 +1,327 @@
+<div id="content" class="col-sm-9 content-body">
+    <h2>Work Order - PS&L Version</h2>
+    <p>Use this page to search and edit worker order items </p>
+    <div class="row">
+        <br />
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" >Warehouse</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <option value="" >Select Warehouse</option>
+                        <option value="" >D1 - BARUERI</option>
+                        <option value="" >D2 - BARUERI</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Dealer</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <option value="" >Select Dealer</option>
+                        <option value="" >RT - 01</option>
+                        <option value="" >RT - 02</option>
+                    </select>
+                </div>
+            </div>        
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Order</label>
+                    <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                </div>
+            </div>  
+            
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Order Status</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <option value="" >Select Order Status</option>
+                        <option value="" >RT - 815</option>
+                        <option value="" >RT - 816</option>
+                    </select>
+                </div>
+            </div> 
+            
+            
+    </div>
+    <div class="row">
+        <br />
+           <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Part </label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <option value="" >Select Part </option>
+                        <option value="" >01 - SEG a SEX</option>
+                        <option value="" >02 - SAB a DOM</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+           <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Item Status</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <option value="" >Select Item Status</option>
+                        <option value="" >01 - 08:00</option>
+                        <option value="" >02 - 12:00</option>
+                        
+                    </select>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Item priority</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                    <label for="pickingLabelCode" translate>Item priority</label>
+                        <option value="" >Select Item priority</option>
+                        <option value="" >A - AUTOMATIC</option>
+                        <option value="" >M - MANUAL</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Item Number</label>
+                    <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                </div>
+            </div>  
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3 col-xs-2">
+            <div class="form-group">
+                <label for="pickingLabelCode" translate>Delivery Service</label>
+                <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                        ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                    <label for="pickingLabelCode" translate>Delivery Service</label>
+                    <option value="" >Select Item priority</option>
+                    <option value="" >A - AUTOMATIC</option>
+                    <option value="" >M - MANUAL</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Delivery Method</label>
+                    <select name="bkWarehouseUidD" class="form-control" placeholder="{{'application.inbound.preReceiving.labelSelect.selectWarehouse' | translate}}"
+                            ng-required="true"  wc-validation-indicator="{{'application.inbound.preReceiving.bkWarehouseUidD' | translate}}">
+                        <label for="pickingLabelCode" translate>Delivery Method</label>
+                        <option value="" >Select Delivery Method</option>
+                        <option value="" >A - AUTOMATIC</option>
+                        <option value="" >M - MANUAL</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-2">
+                <div class="form-group">
+                    <label for="pickingLabelCode" translate>Init Order Date</label>
+                    <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                </div>
+            </div> 
+
+            <div class="col-md-3 col-xs-2">
+                    <div class="form-group">
+                        <label for="pickingLabelCode" translate>End Order Date</label>
+                        <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                    </div>
+                </div> 
+
+                <div class="col-md-3 col-xs-2">
+                        <div class="form-group">
+                            <label for="pickingLabelCode" translate>From Invoice#</label>
+                            <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                        </div>
+                    </div>    
+                    <div class="col-md-3 col-xs-2">
+                            <div class="form-group">
+                                <label for="pickingLabelCode" translate>To Invoice#</label>
+                                <input class="form-control input-sm" type="text" name="pickedQuantity" ng-model="" maxlength="" />
+                            </div>
+                        </div>                                
+    </div>    
+    <div class="col-md-12 col-xs-12">
+        <div class="form-group">
+            <br/>
+            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-primary-default" uib-tooltip="">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Search</span>
+            </button>
+            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-secondary" uib-tooltip="">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Clear</span>
+            </button>
+            
+        </div>
+    </div> 
+    <h3 translate>Worker Order Result</h3>
+
+<div class="row">
+    <div wc-responsive-table data="controller.list" page="controller.currentPage" count="controller.listCount" data-table-name="list" row-key="countryUidK" pagination-enabled checkallnone-enabled responsive-view="list" 
+        id="list-table" class="col-xs-12 wc-table" ng-model="controller.itensToDelete">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th wc-column-sort="countryN" wc-column-sort-default="asc" class="col-md-1"><input type="checkbox" checked="true"></th>
+                <th wc-column-sort="currencyIsoC" class="fontSizeItemReceiving">Order</th>
+                <th wc-column-sort="currencyMaskX" class="fontSizeItemReceiving">Order &#013;Date</th>
+                <th wc-column-sort="priceCurrencyDecimalQ" class="fontSizeItemReceiving">Item</th>
+                <th wc-column-sort="languageC" class="fontSizeItemReceiving">Item Qty</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">GSPN</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Detail</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Depot</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Qty</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Status</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Status &#013;Date</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">>Case</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Invoice</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Invoice &#013;Date</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Dealer</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">GSPN &#013;Original &#013;Ordered</th>
+                <th wc-column-sort="countryIsoR" class="fontSizeItemReceiving">Item &#013;Priority</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-center"><span><input type="checkbox" checked="true"></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>001</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>02/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>10</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>ABC</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>D2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>7</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>Invoiced</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>04/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1234</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>555</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>04/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3090</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>ABC  X</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>0 - Urgent</span></td>
+            </tr>
+             <tr>
+                <td class="text-center"><span><input type="checkbox" checked="true"></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>001</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>02/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>10</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>ABC</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>D2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>7</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>Allocated</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>04/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3090</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2 - Normal</span></td>
+            </tr>
+            <tr>
+                <td class="text-center"><span><input type="checkbox" checked="true"></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>001</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>02/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>10</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>ABC</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>D2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>7</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>Confirmed</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>04/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3090</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2 - Normal</span></td>
+            </tr>
+            <tr>
+                <td class="text-center"><span><input type="checkbox" checked="true"></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>001</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>02/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>5</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>XYZ</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>D3</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>Allocated</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>08/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3090</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2 - Normal</span></td>
+            </tr>
+            <tr>
+                <td class="text-center"><span><input type="checkbox" checked="true"></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>001</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>02/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>5</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>XYZ</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>2</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>D3</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>Packed</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>04/01/2019</span></td>
+                <td class="text-center fontSizeItemReceiving"><span>1235</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>3090</span></td>
+                <td class="text-center fontSizeItemReceiving"><span></span></td>
+                <td class="text-center fontSizeItemReceiving"><span>0 - Urgent</span></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+ <div class="row">
+  <div class="col-md-12 col-xs-12">
+        <div class="form-group">
+            <br/>
+            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-danger" uib-tooltip=""
+           >
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Cancel Selected Lines</span>
+            </button>
+            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-success" uib-tooltip="">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Update Priority</span>
+            </button>
+            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-success" uib-tooltip="">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Release OD</span>
+            </button>
+        </div>
+    </div> 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
