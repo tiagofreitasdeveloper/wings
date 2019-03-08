@@ -1,6 +1,5 @@
 <div id="content" class="col-sm-9 content-body">
     <h2>Internal Route Maintenance</h2>
-    <h2>{{rotas.warehouse}}</h2>
     <p>Use this page to search and edit internal routes </p>
     <div class="row">
         <br />
@@ -94,10 +93,10 @@
             
             
     </div>
-    <div class="col-md-12 col-xs-12">
+    <div class="col-md-12 col-xs-12"  >
         <div class="form-group">
             <br/>
-            <button type="button" ng-click="controller.search()" wc-click-once class="btn btn-primary-default" uib-tooltip="">
+            <button type="button" ng-click="search()" wc-click-once class="btn btn-primary-default" uib-tooltip="">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span>Search</span>
             </button>
             <button type="button" ng-click="" wc-click-once class="btn btn-secondary" uib-tooltip="">
@@ -107,7 +106,7 @@
         </div>
     </div> 
     <h3 translate>Internal Route Result</h3>
-
+{{name}}
 <div class="row">
     <div wc-responsive-table data="controller.list" page="controller.currentPage" count="controller.listCount" data-table-name="list" row-key="countryUidK" pagination-enabled checkallnone-enabled responsive-view="list" 
         id="list-table" class="col-xs-12 wc-table" ng-model="controller.itensToDelete">

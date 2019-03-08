@@ -1,5 +1,13 @@
 var app = angular.module('wings',["ui.router"]);
 
+
+
+app.controller('routesCtrl', function($scope){
+
+    console.log('routesCtrl');
+
+    
+ }); 
 app.controller('pickedCtrl', function($scope){
    
    var picked = {
@@ -24,8 +32,12 @@ app.controller('pickedCtrl', function($scope){
     $scope.listPicked = [];
     $scope.listPicked.push(picked1);
   
+    $scope.search = function() {
+        console.log('search');
+    }
 
 })
+  
 
 app.config(function ( $stateProvider ) {
 
@@ -40,8 +52,18 @@ app.config(function ( $stateProvider ) {
      $stateProvider
     .state('dispached', {
         url: '/dispached',
-         template: '<h3>hello world2!</h3>'
+         template: '<h3>hello world2!</h3>',
+         controller: 'routesCtrl'
+    });
+
+    $stateProvider
+    .state('routes', {
+        url: '/routes',
+        templateUrl: 'internalRouteList.html',
+        controller: 'routesCtrl'
+        
     });
 
 });
+
 
